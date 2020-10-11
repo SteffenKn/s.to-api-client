@@ -1,7 +1,3 @@
-export * from './example';
+export * from './s-to-client';
 
-import Example from './example';
-
-const example: Example = new Example();
-
-example.hello('Peter');
+export * from './types/index';

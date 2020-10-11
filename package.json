@@ -1,20 +1,16 @@
 {
-  "name": "typescript-template-repository",
+  "name": "s.to-client",
   "version": "0.0.0",
   "description": "This is a template for TypeScript projects",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project .",
-    "start": "node dist/index.js",
-    "test": "c8 mocha dist/tests/*.js --timeout 15000 --exit",
-    "test:coverage": "npm run test:coverage-check && npm run test:coverage-report",
-    "test:coverage-check": "c8 check-coverage --lines 70 --functions 70 --branches 70",
-    "test:coverage-report": "c8 report"
+    "test": "npm run build && node dist/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SteffenKn/typescript-template-repository.git"
+    "url": "git+https://github.com/SteffenKn/s.to-client.git"
   },
   "keywords": [
     "typescript",
@@ -23,18 +19,15 @@
   "author": "Steffen Knaup",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SteffenKn/typescript-template-repository/issues"
+    "url": "https://github.com/SteffenKn/s.to-client/issues"
   },
-  "homepage": "https://github.com/SteffenKn/typescript-template-repository#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/SteffenKn/s.to-client#readme",
+  "dependencies": {
+  },
   "devDependencies": {
-    "@types/chai": "4.2.11",
-    "@types/mocha": "7.0.2",
     "@types/node": "12.12.6",
-    "c8": "7.2.0",
-    "chai": "4.2.0",
-    "mocha": "8.0.1",
     "tslint": "6.1.2",
+    "tslint-eslint-rules": "5.4.0",
     "typescript": "3.9.5"
   }
 }
