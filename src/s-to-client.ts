@@ -7,13 +7,13 @@ import {
   QueryParam,
   SeriesList,
 } from './types/index';
-import { Series } from './types/series';
+import {Series} from './types/series';
 
 const API_VERSION: string = 'v1';
 const BASE_URL: string = `s.to`;
 const API_PATH: string = `/api/${API_VERSION}`;
 
-export default class SToClient {
+export class SToClient {
   private apiKey: string;
   private httpClient: HttpClient;
 
