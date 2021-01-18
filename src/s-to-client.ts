@@ -22,15 +22,22 @@ export class SToClient {
     this.httpClient = new HttpClient(BASE_URL, API_PATH);
   }
 
-  public async listSeries(extended?: number, category?: number, genre?: number): Promise<SeriesList> {
+  public async listSeries(extended?: boolean, category?: number, genre?: number): Promise<SeriesList> {
     const route: string = '/series/list';
 
     const queryParams: Array<QueryParam> = [
       {key: 'key', value: this.apiKey},
-      {key: 'extended', value: extended},
-      {key: 'category', value: category},
-      {key: 'genre', value: genre},
     ];
+
+    if (extended) {
+      queryParams.push({key: 'extended', value: 1});
+    }
+    if (category) {
+      queryParams.push({key: 'category', value: category});
+    }
+    if (genre) {
+      queryParams.push({key: 'genre', value: genre});
+    }
 
     const response: ListSeriesResponse = await this.httpClient.get<ListSeriesResponse>(route, queryParams);
 
