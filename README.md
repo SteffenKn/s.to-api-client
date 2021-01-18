@@ -53,7 +53,7 @@ Returns a list of all series that exist on s.to.
 
 #### Returns
 
-A list of all series that exist on s.to. [Series List](./src/types/series-list)
+A list of all series that exist on s.to. [Series List](./src/types/series-list.ts)
 
 ### getSeries
 
@@ -68,7 +68,7 @@ Unlike `listSeries`, this returns all series-specific information such as season
 
 #### Returns
 
-All information for the specific series. [Series](./src/types/series)
+All information for the specific series. [Series](./src/types/series.ts)
 
 ## What about the rest?
 
