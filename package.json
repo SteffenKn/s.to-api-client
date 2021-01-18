@@ -1,7 +1,7 @@
 {
   "name": "s.to-api-client",
   "version": "0.0.0",
-  "description": "This is a template for TypeScript projects",
+  "description": "This is a simple API client for the s.to API.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -13,8 +13,9 @@
     "url": "git+https://github.com/SteffenKn/s.to-client.git"
   },
   "keywords": [
-    "typescript",
-    "template"
+    "s.to",
+    "client",
+    "series"
   ],
   "author": "Steffen Knaup",
   "license": "MIT",
