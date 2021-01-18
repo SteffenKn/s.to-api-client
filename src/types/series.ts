@@ -1,4 +1,4 @@
-import {Season} from "./index";
+import {Season} from './index';
 
 export type Series = {
   id: number,
@@ -26,7 +26,7 @@ export type Series = {
 
 export type Rating = {
   count: number,
-  result: number
+  result: number,
 };
 
 export type Country = {
